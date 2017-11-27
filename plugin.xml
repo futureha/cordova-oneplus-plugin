@@ -15,7 +15,7 @@
         <runs/>
 
         <!-- This is the window variable name you want, like window.OnePlusPlugin -->
-        <clobbers target="OnePlusPlugin" />
+        <clobbers target="cordova.plugins.OnePlusPlugin" />
       </js-module>
       <config-file target="res/xml/config.xml" parent="/*">
         <feature name="OnePlusPlugin">
@@ -31,7 +31,7 @@
     <platform name="ios">
         <js-module src="www/plugin.js" name="plugin">
             <runs/>
-            <clobbers target="OnePlusPlugin" />
+            <clobbers target="cordova.plugins.OnePlusPlugin" />
         </js-module>
         <config-file target="config.xml" parent="/*">
             <feature name="OnePlusPlugin">
