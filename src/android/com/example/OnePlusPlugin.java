@@ -26,11 +26,12 @@ public class OnePlusPlugin extends CordovaPlugin {
   }
 
   public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
-    if(action.equals("echo")) {
+    if (action.equals("echo")) {
       String phrase = args.getString(0);
       // Echo back the first argument
-      Log.d(TAG, phrase);
-    } else if(action.equals("getDate")) {
+      phrase += "hello  ";
+      callbackContext.success(phrase);
+    } else if (action.equals("getDate")) {
       // An example of returning data back to the web layer
       final PluginResult result = new PluginResult(PluginResult.Status.OK, (new Date()).toString());
       callbackContext.sendPluginResult(result);
