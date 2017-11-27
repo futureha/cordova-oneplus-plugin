@@ -1,0 +1,13 @@
+{
+  "name": "cordova-plugin-oneplus",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "cordova-plugin-oneplus",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  
+  "description": "A starting point for a Cordova Plugin"
+}
